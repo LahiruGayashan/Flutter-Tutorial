@@ -42,7 +42,9 @@ void main (){
         print("My name is $firstName $lastName.");
         print(firstName +lastName);
 
-     // 
+      // Create the full name variable (GIVEN Space in firstName AND lastName)
+        String fullName = firstName + " " + lastName;
+        print(fullName);
 
 
 }
