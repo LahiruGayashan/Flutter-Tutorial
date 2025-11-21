@@ -46,6 +46,72 @@ void main (){
         String fullName = firstName + " " + lastName;
         print(fullName);
 
+       // String interpolation
+        String gree = 'Hello';
+        int age = 25;
+        String message = '$gree! I am ${age + 5} years old.';
+        print(message);
 
+     // String operations
+        String newName = "flutter for beginners";
+        print(newName.length);
+        print(newName.toUpperCase());
+        print(newName.toLowerCase());
+
+     // Substring
+        print(newName.substring(0, 7));
+        print(newName.substring(8));
+
+        // Replace words in a string
+            String oldMessage ="my name is lahiru";
+            String newMessage = oldMessage.replaceAll("my" , "His");
+            print ("old message:$oldMessage");
+            print ("change message:$newMessage");
+
+        //CHALLENGE 01
+         int x = 5;
+         double y =10;
+
+
+       //1)
+       //increment (x=x+2)
+       x+=2;
+       print('x =$x');
+       //x =7
+   
+      //decrement (x=x-2) 
+      x-=2;
+      print('x =$x');
+      //x =5
+    
+      //multiply (x=x*2)
+      x*=2;
+      print('x =$x');
+      //x =10
+   
+      //devicion (x=x/2)
+      y/=2;
+      print('y =$y');
+      //y =5
+
+      //2)
+
+      int y =10;
+      int x =12;
+   
+      print('y=$y , x=$x'); //y=10 , x=12
+   
+      //freefix operation 
+      ++x;//increment   
+      --y;//decrement
+      print('y=$y  ,  x=$x'); //y=9  ,  x=13
+   
+      //postfix operation
+      x++;//increment
+      y--;//decrement
+      print('y=$y  ,  x=$x'); //y=8  ,  x=14
+
+
+      
 }
 
