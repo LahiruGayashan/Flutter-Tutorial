@@ -68,48 +68,66 @@ void main (){
             print ("old message:$oldMessage");
             print ("change message:$newMessage");
 
-        //CHALLENGE 01
-         int x = 5;
-         double y =10;
+       // Type conversion
+  // String to int
 
 
-       //1)
-       //increment (x=x+2)
-       x+=2;
-       print('x =$x');
-       //x =7
-   
-      //decrement (x=x-2) 
-      x-=2;
-      print('x =$x');
-      //x =5
-    
-      //multiply (x=x*2)
-      x*=2;
-      print('x =$x');
-      //x =10
-   
-      //devicion (x=x/2)
-      y/=2;
-      print('y =$y');
-      //y =5
+ // TODO:12/03
 
-      //2)
 
-      int y =10;
-      int x =12;
-   
-      print('y=$y , x=$x'); //y=10 , x=12
-   
-      //freefix operation 
-      ++x;//increment   
-      --y;//decrement
-      print('y=$y  ,  x=$x'); //y=9  ,  x=13
-   
-      //postfix operation
-      x++;//increment
-      y--;//decrement
-      print('y=$y  ,  x=$x'); //y=8  ,  x=14
+  String ageString = "25";
+  int ageInt = int.parse(ageString);
+  print(ageInt);
+
+  // String to double
+  String heightString = "1.2";
+  double heightDouble = double.parse(heightString);
+  print(heightDouble);
+
+  // Int to string
+  int myAge = 25;
+  String myAgeString = myAge.toString();
+  print(myAgeString);
+
+  // Double to string
+  double myHeight = 1.2;
+  String myHeightString = myHeight.toString();
+  print(myHeightString);
+
+  // Boolean to string
+  bool isFlutterEasy = true;
+  String isFlutterEasyString = isFlutterEasy.toString();
+  print(isFlutterEasyString);
+
+  //null
+  Null myName = null;
+  print(myName);
+
+
+  // Programming challenge
+  /*Calculate the area of a circle with radius 10 units and display the result.   
+   Area = pi * r * r
+   pi = 3.142, r = 10
+
+  */
+  double pi = 3.142;
+  double r = 10;
+  double area = pi * r * r;
+  print(area);
+
+  // Convert Fahrenheit to Celsius
+  // C = (F - 32) * 5/9
+  double f = 100;
+  double c = (f - 32) * 5 / 9;
+  print(c);
+
+  // Round, floor, and ceil
+  print(c.round());
+  print(c.floor());
+  print(c.ceil());
+
+  // Display with 2 decimal places
+  print(c.toStringAsFixed(2));
 
 
       
