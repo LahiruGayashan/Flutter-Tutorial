@@ -93,11 +93,16 @@ void main (){
   double myHeight = 1.2;
   String myHeightString = myHeight.toString();
   print(myHeightString);
+  //one row print
+  print('convert my Height to int: $myHeight.toString().runtimeType');
+
 
   // Boolean to string
   bool isFlutterEasy = true;
   String isFlutterEasyString = isFlutterEasy.toString();
   print(isFlutterEasyString);
+  //one row print
+  print('convert my Height to int: $isFlutterEasy.toString().runtimeType');
 
   //null
   Null myName = null;
@@ -113,7 +118,16 @@ void main (){
   double pi = 3.142;
   double r = 10;
   double area = pi * r * r;
-  print(area);
+  print(area); //314.2
+  
+  //round value
+  int roundOffedArea = area.round();
+  print(roundOffedArea); //314
+  //ceil value
+  print("ceil of area is: ${area.ceil()}"); //315
+  //floor value
+  print ("floor of area is : ${area.floor()}");//314
+
 
   // Convert Fahrenheit to Celsius
   // C = (F - 32) * 5/9
