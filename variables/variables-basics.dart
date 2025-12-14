@@ -136,12 +136,12 @@ void main (){
   print(c);
 
   // Round, floor, and ceil
-  print(c.round());
-  print(c.floor());
-  print(c.ceil());
+  print(c.round());//38
+  print(c.floor());//37
+  print(c.ceil());//38
 
   // Display with 2 decimal places
-  print(c.toStringAsFixed(2));
+  print(c.toStringAsFixed(2));//37.78
 
 
       
